@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>சலூன் ரேடியோ — Tamil 80s & 90s Classics</title>
+  <meta name="description" content="An always-on ambient radio for Tamil 80s and 90s golden classics. நினைவுகள் வாழட்டும்." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Yatra One = Tamil-feel decorative heading | Hind Madurai = Tamil-friendly body | JetBrains Mono = timestamps -->
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind+Madurai:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📻</text></svg>" />
+</head>
+<body>
+
+  <script>window.__tw_nonce = '';</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ░░ BACKDROP (barber-shop illustration) ░░ -->
+  <div class="fixed inset-0 z-0 overflow-hidden">
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://deluxesalon.in/assets/saloon-backdrop-DJP5lZDF.jpg" />
+      <img src="https://deluxesalon.in/assets/saloon-backdrop-mobile-Cx_j847k.jpg"
+           alt="Tamil street-side barber shop nostalgic illustration"
+           class="absolute inset-0 w-full h-full object-cover" />
+    </picture>
+    <!-- Warm sepia tone wash over the image for that old-film feel -->
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 sepia-wash"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 saloon-vignette"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 saloon-grain"></div>
+  </div>
+
+  <!-- ░░ PAGE ░░ -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- ── HEADER ──────────────────────────────────────────── -->
+    <header class="relative flex items-center justify-between px-5 pt-5 sm:px-10 sm:pt-7">
+
+      <!-- LIVE DOT -->
+      <div class="live-label">
+        <span class="relative flex size-2">
+          <span class="live-ping absolute inline-flex size-full rounded-full opacity-75" style="background:#c0392b;"></span>
+          <span class="relative inline-flex size-2 rounded-full" style="background:#c0392b;"></span>
+        </span>
+        <span><span id="listener-count">42</span> கேட்கிறார்கள்</span>
+      </div>
+
+      <!-- ════ LOGO ════ -->
+      <div class="absolute left-1/2 -translate-x-1/2 logo-wrap" aria-label="Saloon Radio">
+
+        <!-- Top ornament ✦──────✦ -->
+        <div class="logo-top-bar">
+          <span class="orn-diamond">❖</span>
+          <span class="orn-line"></span>
+          <span class="logo-top-text">சலூன் ரேடியோ</span>
+          <span class="orn-line"></span>
+          <span class="orn-diamond">❖</span>
+        </div>
+
+        <!-- Main wordmark row: pole · SALOON · pole -->
+        <div class="logo-main-row">
+
+          <!-- Left barber pole -->
+          <svg width="12" height="52" viewBox="0 0 12 52" fill="none" aria-hidden="true" class="logo-pole">
+            <rect x="1" y="2" width="10" height="48" rx="5" fill="#1a0f0a" stroke="#d4a850" stroke-width="1.2"/>
+            <clipPath id="plL"><rect x="1" y="2" width="10" height="48" rx="5"/></clipPath>
+            <g clip-path="url(#plL)">
+              <rect x="0" y="2"  width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="14" width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="26" width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="38" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="8"  width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="20" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="32" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="44" width="5" height="6" fill="#b03030"/>
+            </g>
+            <ellipse cx="6" cy="2"  rx="5" ry="2" fill="#d4a850"/>
+            <ellipse cx="6" cy="50" rx="5" ry="2" fill="#d4a850"/>
+          </svg>
+
+          <!-- SALOON text -->
+          <div class="logo-text-stack">
+            <h1 class="saloon-wordmark">SALOON</h1>
+            <span class="saloon-script">நினைவுகள் வாழட்டும்</span>
+          </div>
+
+          <!-- Right barber pole -->
+          <svg width="12" height="52" viewBox="0 0 12 52" fill="none" aria-hidden="true" class="logo-pole">
+            <rect x="1" y="2" width="10" height="48" rx="5" fill="#1a0f0a" stroke="#d4a850" stroke-width="1.2"/>
+            <clipPath id="plR"><rect x="1" y="2" width="10" height="48" rx="5"/></clipPath>
+            <g clip-path="url(#plR)">
+              <rect x="0" y="2"  width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="14" width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="26" width="5" height="6" fill="#b03030"/>
+              <rect x="0" y="38" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="8"  width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="20" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="32" width="5" height="6" fill="#b03030"/>
+              <rect x="7" y="44" width="5" height="6" fill="#b03030"/>
+            </g>
+            <ellipse cx="6" cy="2"  rx="5" ry="2" fill="#d4a850"/>
+            <ellipse cx="6" cy="50" rx="5" ry="2" fill="#d4a850"/>
+          </svg>
+
+        </div>
+
+        <!-- Bottom ornament ── ◆ SINCE 1987 ◆ ── -->
+        <div class="logo-bottom-bar">
+          <span class="orn-line"></span>
+          <span class="logo-bottom-text">♪ பழைய நினைவுகள் ♪</span>
+          <span class="orn-line"></span>
+        </div>
+
+      </div>
+
+      <!-- right side empty -->
+      <div></div>
+    </header>
+
+    <!-- ── BODY: SIDEBAR + HERO ──────────────────────────── -->
+    <div class="flex flex-1">
+
+      <!-- LEFT SIDEBAR — Mood / Era labels (Tamil themed) -->
+      <aside class="tamil-sidebar">
+        <div class="sidebar-inner">
+
+          <p class="sidebar-heading">காலம்</p>
+
+          <div class="era-badge era-active">
+            <span class="era-icon">🎞️</span>
+            <span class="era-text">80கள்</span>
+            <span class="era-sub">Classics</span>
+          </div>
+
+          <div class="era-badge">
+            <span class="era-icon">📼</span>
+            <span class="era-text">90கள்</span>
+            <span class="era-sub">Golden Era</span>
+          </div>
+
+          <div class="sidebar-sep">✦</div>
+
+          <!-- Floating musical notes decoration -->
+          <div class="note-deco" aria-hidden="true">♪</div>
+          <div class="note-deco note-deco-2" aria-hidden="true">♫</div>
+          <div class="note-deco note-deco-3" aria-hidden="true">♩</div>
+
+        </div>
+      </aside>
+
+      <!-- MAIN — let backdrop breathe -->
+      <main class="flex-1 pb-40">
+        <!-- intentionally empty -->
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ░░ GLASS PLAYER BAR ░░ -->
+  <div class="fixed inset-x-0 bottom-0 z-50">
+    <div class="mx-auto w-full max-w-xl px-4 mb-5 sm:mb-8">
+      <!-- cursor-glow wrapper -->
+      <div class="player-glass-wrap" id="player-wrap">
+        <div class="player-glass px-4 pt-3 pb-2.5 flex flex-col gap-2.5">
+
+          <!-- Track row -->
+          <div class="flex items-center gap-3">
+
+            <!-- Cover art -->
+            <img id="current-track-cover"
+                 src="https://i.ytimg.com/vi/wDq9aF-3j3M/hqdefault.jpg"
+                 alt="இப்போது இசைக்கிறது"
+                 class="track-cover" />
+
+            <!-- Info -->
+            <div class="min-w-0 flex-1">
+              <p id="current-track-title" class="track-title">தொடங்குகிறது…</p>
+              <p id="current-track-movie" class="track-movie">சலூன் ரேடியோ</p>
+            </div>
+
+            <!-- Controls -->
+            <div class="flex items-center gap-0.5 shrink-0">
+
+              <button id="prev-track-btn" type="button" aria-label="முந்தைய பாடல்" class="player-btn">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+              </button>
+
+              <button id="play-pause-btn" type="button" aria-label="இசை" class="player-btn-play">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+
+              <button id="next-track-btn" type="button" aria-label="அடுத்த பாடல்" class="player-btn">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zm10-12h2v12h-2z"/></svg>
+              </button>
+
+              <button id="mute-btn" type="button" aria-label="ஒலியை மௌனமாக்கு" class="player-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+                  <path d="M16 9a5 5 0 0 1 0 6"/>
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Seek / timeline row -->
+          <div class="seek-row">
+            <span id="time-current" class="time-label">0:00</span>
+            <div id="seek-track" class="seek-track">
+              <div id="seek-fill"  class="seek-fill"></div>
+              <div id="seek-thumb" class="seek-thumb"></div>
+            </div>
+            <span id="time-duration" class="time-label">-:--</span>
+          </div>
+
+        </div>
+      </div><!-- end player-glass-wrap -->
+    </div>
+  </div>
+
+  <!-- Hidden YouTube mount -->
+  <div class="pointer-events-none fixed opacity-0" style="width:1px;height:1px;">
+    <div id="yt-player-container"></div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/tracks.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Cursor-glow tracker for player bar -->
+  <script>
+    (function () {
+      var wrap = document.getElementById('player-wrap');
+      if (!wrap) return;
+      wrap.addEventListener('mousemove', function (e) {
+        var rect = wrap.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width  * 100).toFixed(1) + '%';
+        var y = ((e.clientY - rect.top)  / rect.height * 100).toFixed(1) + '%';
+        wrap.style.setProperty('--mx', x);
+        wrap.style.setProperty('--my', y);
+      });
+    })();
+  </script>
+
+</body>
+</html>
