@@ -36,7 +36,7 @@
        ▶▶  PASTE YOUR YOUTUBE PLAYLIST URL HERE (optional)
        Leave as empty string "" if you are adding songs manually.
        ════════════════════════════════════════════════════════════ */
-    youtubePlaylistUrl: '',
+    youtubePlaylistUrl: 'https://youtube.com/playlist?list=PL0rVrRHZm_D5jEXAlpEcRGOXK3tStzwq8',
     // EXAMPLE: youtubePlaylistUrl: 'https://www.youtube.com/playlist?list=PLxxxxxxxxxxxxxxxxx',
 
 
